@@ -1,0 +1,22 @@
+[package]
+name = "saml"
+version = "0.1.0"
+authors = ["Sebastian Kaiser <sk4is3r@gmail.com>"]
+edition = "2018"
+homepage = "https://github.com/mttrbit/saml-rs"
+repository = "https://github.com/mttrbit/saml-rs.git"
+description = "Implements a SAML workflow I needed to deal with."
+keywords = ["saml", "vip", "client"]
+readme = "README.md"
+license = "ISC"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+vip = { git = "https://github.com/mttrbit/vip-rs", branch = "main"}
+regex = "1"
+lazy_static = "1.4.0"
+rand = "0.7.3"
+reqwest = { version = "0.10.8", features = ["blocking", "json"]}
+serde_json = "1.0.59"
+serde = { version = "1.0", features = ["derive"] }
