@@ -28,7 +28,7 @@ match IdP::with_client(&rc_client).authenticate(
     "your_password",
 ) {
     Ok(()) => {
-        // do something, e.g. call a protected service 
+        // do something with rc_client, e.g. call a protected service 
     }
     Err(e) => println!("Error {:?}", e),
 };
